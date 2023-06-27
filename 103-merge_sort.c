@@ -1,4 +1,5 @@
 #include "sort.h"
+#include <stdlib.h>
 #include <stddef.h>
 
 /**
