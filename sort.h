@@ -17,9 +17,6 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-void quick_sort_(int *array, int beg, int end);
-int partition(int a[], int beg, int end);
-void swap_and_print(listint_t *tmp, listint_t **list, listint_t *ptr);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
@@ -34,8 +31,18 @@ void heap_sort(int *array, size_t size);
 void heapify(int *array, size_t size, int end, int i);
 void swap(int *a, int *b);
 void radix_sort(int *array, size_t size);
+int getMax(int arr[], int n);
+void countSort(int arr[], size_t n, int exp);
 void bitonic_sort(int *array, size_t size);
+void compAndSwap(int a[], int i, int j, int dir, int size);
+void bitonicMerge(int a[], int low, int cnt, int dir, int size);
+void bitonicSort(int a[], int low, int cnt, int dir, int size);
 void quick_sort_hoare(int *array, size_t size);
 
+void swap(int arr[], int first, int second);
+void merge(int *arr, int *tempArray, int lowerIndex, int middleIndex,
+	   int upperIndex);
+void mergeSrt(int *arr, int *tempArray, int lowerIndex, int upperIndex);
+void merge_sort(int *arr, size_t size);
 
 #endif /* _SORT_H */
