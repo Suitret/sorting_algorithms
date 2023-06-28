@@ -38,10 +38,16 @@ void compAndSwap(int a[], int i, int j, int dir, int size);
 void bitonicMerge(int a[], int low, int cnt, int dir, int size);
 void bitonicSort(int a[], int low, int cnt, int dir, int size);
 void quick_sort_hoare(int *array, size_t size);
+void quick_sort_recursive_hoare(int *array, int low, int high, size_t size);
+int hoare_partition(int *array, int low, int high, size_t size);
+void swap_elements(int *array, int idx1, int idx2);
 
 void merge(int *arr, int *tempArray, int lowerIndex, int middleIndex,
 	   int upperIndex);
 void mergeSrt(int *arr, int *tempArray, int lowerIndex, int upperIndex);
 void merge_sort(int *arr, size_t size);
+void swap_and_print(listint_t *tmp, listint_t **list, listint_t *ptr);
+void quick_sort_(int *a, int beg, int end);
+int partition(int a[], int beg, int end);
 
 #endif /* _SORT_H */
