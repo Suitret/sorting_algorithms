@@ -12,7 +12,7 @@
 
 void quick_sort(int *array, size_t size)
 {
-	quick_sort_(array, 0, (int)size - 1);
+	intermediate_value_for_sorting_here(array, 0, (int)size - 1);
 }
 
 /**
@@ -24,15 +24,15 @@ void quick_sort(int *array, size_t size)
  * description -  This function sorts the array in ascending order.
  * Return: a void type
  */
-void quick_sort_(int *a, int beg, int end)
+void intermediate_value_for_sorting_here(int *a, int beg, int end)
 {
 	int loc;
 
 	if (beg < end)
 	{
 		loc = partition(a, beg, end);
-		quick_sort_(a, beg, loc - 1);
-		quick_sort_(a, loc + 1, end);
+		intermediate_value_for_sorting_here(a, beg, loc - 1);
+		intermediate_value_for_sorting_here(a, loc + 1, end);
 	}
 }
 
